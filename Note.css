@@ -1,0 +1,299 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    width: 100%; 
+    height: 80px;
+    background-color: black; 
+    margin: 0px;
+    padding: 0px; 
+    display: flex; 
+    position: absolute;
+    justify-content: center; 
+    align-items: center;
+}  
+
+#info 
+{
+    position: fixed; 
+    right: 40px; 
+    height: 40px;
+    width: 60px; 
+    border-radius: 25px; 
+    border: solid white 2px;
+    background-color: black; 
+    color: white;
+} 
+
+#info:hover
+{
+    color: black;
+    background: white;
+
+} 
+
+#popup
+{
+    display: none; 
+    position: static;
+    z-index: 1; 
+} 
+
+#popup_item 
+{   
+    position: absolute;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(128,128,128, 0.5);
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    top: 0;
+    
+}
+
+#popup_item_container
+{   
+    
+    background: white;
+    width: 300px;  
+    height: 150px;
+    border-radius: 5px;
+} 
+
+#popup_item_container p 
+{   
+   
+    left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: justify;
+    padding: 25px 15px;
+
+} 
+
+#popup_item_container button 
+{   
+    position: relative;
+    right: 0px; 
+    left: 230px;
+    top: 10px; 
+    height: 30px;
+    width: 60px; 
+    border-radius: 25px;
+    border: 2px solid black; 
+    background-color: white;
+}  
+
+#popup_item_container button:hover
+{
+    background-color: black;
+    color: white;
+} 
+
+ 
+.header p 
+{
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 26px; 
+    margin: 0;
+    padding: 0;
+}   
+
+/* header */
+
+.message 
+{
+    width: 100%;
+    height: 70px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+#error
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: black;
+    font-size: 20px;
+}
+
+main
+{
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;  
+    height: 220px;
+} 
+
+.main_item 
+{
+    margin: 0 10px; 
+}  
+
+#Add_note 
+{
+    height: 32px; 
+    border-radius: 25px;
+    background: white;
+    border: 2px solid black;
+} 
+
+#Add_note:hover
+{
+    color: white;
+    background-color: black;
+}
+ 
+#note 
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;  
+    padding: 0 10px;
+    border: 2px black solid;
+}  
+
+.Date 
+{
+    font-size: 12px; 
+    margin: 0; 
+    padding: 5px 0;
+}
+
+.DeleteButton 
+{
+    margin: 0;
+    padding: 5px 0;
+    background: white; 
+    color: black; 
+    border: none;
+} 
+
+.DeleteButton:hover
+{
+    color: red;
+}
+
+#notes 
+{   
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column-reverse; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+.note 
+{
+    margin: 0 0;
+    padding: 5px 0; 
+    text-align: justify;
+}
+
+.note_item 
+{
+    width: 380px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: row;  
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 2px solid lightslategray;
+} 
+
+#note_item_layout 
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 0 15px;
+}
+
+#note_item_ops 
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 0 15px;
+}
+ 
+/* note edit  */  
+
+#newNote 
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;  
+    padding: 0 10px;
+    border: 2px black solid;
+} 
+
+#editButton 
+{
+    height: 32px; 
+    border-radius: 25px;
+    background: white;
+    border: 2px solid black; 
+    margin: 0 10px;
+}  
+
+
+
+#editButton:hover
+{
+    background-color: black;
+    color: white;
+} 
+
+#closeEditButton 
+{
+    height: 32px; 
+    border-radius: 25px;
+    background: white;
+    border: 2px solid black; 
+    margin: 0 10px;
+} 
+
+#closeEditButton:hover
+{
+    background-color: black;
+    color: white;
+}
+
+#edit
+{
+    display: none; 
+    width: 100%; 
+    height: 160px;
+    justify-content: center;
+    align-items: center; 
+}  
+
+#newNote 
+{
+    margin: 0 10px;
+}
+
+
+.Edit_button
+{
+    margin: 0 0px; 
+    background-color: white; 
+    color: black; 
+    border: none; 
+    padding: 5px 0;
+} 
+
+.Edit_button:hover{
+    color: green;
+}
